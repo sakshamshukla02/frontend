@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.component {
+  div {
+    img {
+      width: 100vw;
+      height: 95vh;
+    }
+  }
+  .navbar_displaypage {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top:1vh;
+    right: 1vh;
+    justify-content: flex-end;
+    gap: 0.5vh;
+    a {
+      text-decoration: none;
+      margin-top: 2vh;
+      button {
+        background-color: transparent;
+        font-size: 4vh;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        padding: 0.5rem;
+        transition: ease-in;
+        &:hover {
+          cursor: pointer;
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+    p {
+      font-size: 4.5vh;
+    }
+  }
+  .logoName {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 2vh;
+    top: 10vh;
+    left: 6vh;
+    div {
+      height: 7vh;
+      width: 7vh;
+      background-color: aliceblue;
+      border-radius: 20px;
+      p {
+         padding-top: 1vh; 
+        color: black;
+        font-size: 4.5vh;
+        text-align: center;
+      }
+    }
+  }
+  footer {
+    width: 100vw;
+    text-align: center;
+    font-size: 3vh;
+    background-color: black;
+    color: white;
+    height: 5vh;
+  }
+}

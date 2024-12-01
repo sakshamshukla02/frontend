@@ -1,0 +1,89 @@
+
+body{
+    overflow-x: hidden;
+}
+.notedisplayContainer {
+  width: 90vw;
+  background-color: #ffffff;
+  padding: 4vh;
+  margin: 3vh auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  box-sizing: border-box;
+
+    div:first-child p {
+        word-wrap: break-word;
+        font-size: 4vh;
+        color: #555555;
+        margin: 0;
+  }
+
+    div:nth-child(2) p {
+    word-wrap:break-word;
+    font-size: 3vh;
+    color: black;
+    margin: 0;
+  }
+
+ 
+  div:last-child {
+    display: flex;
+    margin-top: 3vh;
+    justify-content: flex-end;
+    gap: 2vh;
+  }
+
+  button {
+    padding: 1vh 3vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  
+  button:first-child {
+    background-color: #28a745;
+    color: white;
+  }
+
+  button:first-child:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+
+  button:first-child:active {
+    transform: scale(0.95);
+  }
+
+ 
+  button:last-child {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  button:last-child:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+
+  button:last-child:active {
+    transform: scale(0.95);
+  }
+
+   @media (max-width: 768px) {
+    .notedisplayContainer {
+      padding: 15px;
+    }
+
+    button {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  } 
+}

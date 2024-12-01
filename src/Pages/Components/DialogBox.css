@@ -1,0 +1,101 @@
+.dialogBoxContainer {
+  background-color: #ffffff;
+  width: 60vw;
+  padding: 5vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  z-index: 1000;
+  text-align: left;
+
+  #editNote {
+    font-size: 5vh;
+    font-weight: bold;
+    color: brown;
+    margin: 0;
+  }
+
+  label {
+    font-size: 4vh;
+    color: #333333;
+    display: block;
+    margin-bottom: 2vh;
+  }
+
+  label input,
+  label textarea {
+    width: 100%;
+    padding: 2vh;
+    font-size: 3vh;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  label input:focus,
+  label textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+
+  div:last-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  button {
+    flex: 1;
+    padding: 1vh 3vh;
+    font-size: 2vh;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  #button1 {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+
+  #button2{
+    background-color: #0056b3;
+  }
+
+  #button1:active {
+    transform: scale(0.98);
+  }
+
+  #button2{
+    background-color: #6c757d;
+    color: #ffffff;
+  }
+
+  #button1:hover {
+    background-color: #5a6268;
+  }
+
+  #button2:active {
+    transform: scale(0.98);
+  }
+
+  @media (max-width: 768px) {
+    .dialogBoxContainer {
+      width: 90%;
+      padding: 15px;
+    }
+
+    button {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  }
+}
