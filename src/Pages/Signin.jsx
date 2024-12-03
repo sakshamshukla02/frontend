@@ -22,7 +22,7 @@ const Signin = () => {
 
   async function handleClick() {
     console.log(import.meta.env.VITE_APP_SERVER);
-    const response = await axios.post(`https://e-notebook-qlrn.onrender.com/user/login`, {
+    const response = await axios.post(`${import.meta.env.VITE_APP_SERVER}/user/login`, {
       username: user,
       password: pass,
     });
