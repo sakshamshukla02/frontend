@@ -7,8 +7,6 @@
   background-color: whitesmoke;
 }
 .signupcontainer{
-
-
   label {
     display: block;
     font-weight: bold;
@@ -32,7 +30,7 @@
 
   input[type="text"]:focus {
     border-color: #007bff;
-    border-radius: 2vh;
+    border-radius: 15px;
   }
 
   button {
